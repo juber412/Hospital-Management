@@ -21,7 +21,7 @@ public class PatientController {
         this.patientRepository = patientRepository;
     }
 
-    @PostMapping("/create")
+    @PostMapping("/insert")
     public Patient createPatient(@RequestBody Patient patient)
     {
         return patientRepository.save(patient);
