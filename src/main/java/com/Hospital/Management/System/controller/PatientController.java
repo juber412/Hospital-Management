@@ -21,6 +21,9 @@ public class PatientController {
         this.patientRepository = patientRepository;
     }
 
+    /*
+    getting the patient details from ui form and updating into database
+     */
     @PostMapping("/insert")
     public Patient createPatient(@RequestBody Patient patient)
     {
